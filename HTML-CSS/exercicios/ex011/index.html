@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <h2>Audio Mistake</h2>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <h2>audio Seasons-roljui.mp3</h2>
+    <p><audio src="midia/Seasons-roljui.mp3" controls autoplay></audio></p>
+    <p>Usando outra forma e carregar o audio</p>
+    <audio preload="metadata" controls autoplay><!--se queiser que repita coloca loop depois de autoplay-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <!--pode usar outros tipos de midia-->
+        <!--<source src="midia/guanacast-33.ogg" type="audio/ogg">-->
+        <!--<source src="midia/guanacast-33.wav" type="audio/wav" não recomendada>-->
+        <p>Infelismente seu navegador não consegue reporduzir áudio <a href="midia/guanacast-33.mp3" >Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
